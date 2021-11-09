@@ -32,7 +32,11 @@
     "linebreak-style": 0,
     "eol-last": 0,
     "no-underscore-dangle": 0,
-    "indent": ["off", "tab"]
+    "indent": ["off", "tab"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {"devDependencies": ["**/*.test.js", "**/*.spec.js"]}
+    ]
   },
   "settings": {
     "import/resolver": {
