@@ -2,14 +2,14 @@ import faker from 'faker';
 import React from 'react';
 import {
     Animated,
-    Image, StatusBar, StyleSheet, Text, View,
+    Image, StyleSheet, Text, View,
 } from 'react-native';
 
 faker.seed(10);
 
 const Data = [...Array(30).keys()].map((_, i) => ({
-        key: faker.random.uuid(),
-        image: `https://randomuser.me/api/portraits/${faker.helpers.randomize(['women', 'men'])}/${faker.random.number(60)}.jpg`,
+        key: faker.datatype.uuid(),
+        image: `https://randomuser.me/api/portraits/${faker.helpers.randomize(['women', 'men'])}/${faker.datatype.number(60)}.jpg`,
         name: faker.name.findName(),
         jobTitle: faker.name.jobTitle(),
         email: faker.internet.email(),
@@ -75,7 +75,7 @@ const CustomizeListView = () => {
                       }}
                       />
                       <View>
-                      <Text style={{ fontSize: 22, fontWeight: '700' }}>{item.name}</Text>
+                      <Text style={{ fontSize: 22, fontWeight: '700', color: 'blue' }}>{item.name}</Text>
                       <Text style={{ fontSize: 18, opacity: 0.7 }}>{item.jobTitle}</Text>
                       <Text style={{ fontSize: 12, opacity: 0.8, color: 'blue' }}>{item.email}</Text>
                       </View>

@@ -9,6 +9,11 @@ const navigate = (routename, params) => {
 
 const Route = {
     navigate,
+    CListView: 'Custom List View',
+    ZaraCarousel: 'Zara Carousel',
+    Biometric: 'Biometric',
+    AccordionList: 'Accordion List',
+    Reanimated2: 'Reanimated 2',
 };
 
 export default Route;
