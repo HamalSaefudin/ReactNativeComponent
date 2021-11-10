@@ -14,6 +14,7 @@ const Route = {
     Biometric: 'Biometric',
     AccordionList: 'Accordion List',
     Reanimated2: 'Reanimated 2',
+    Finance: 'Finance',
 };
 
 export default Route;

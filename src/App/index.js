@@ -7,6 +7,7 @@ import CustomizeListView from '../Modules/CustomizeListView/CustomizeListView';
 import MainScreen from '../Modules/MainScreen';
 import ZaraCarousel from '../Modules/ZaraCarousel/ZaraCarousel';
 import Route, { navigation } from './Routes';
+import MainFinance from '../Modules/Finance/MainFinance';
 
 const Stack = createStackNavigator();
 
@@ -45,9 +46,13 @@ const ApplicationStack = () => (
           component={Reanimated2}
           options={NoHeaderOption}
         />
+        <Stack.Screen
+          name={Route.Finance}
+          component={MainFinance}
+          options={NoHeaderOption}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
 
-// export { default } from '../../storybook';
 export default ApplicationStack;

@@ -90,7 +90,7 @@ export default ZaraCarousel;
 const styles = StyleSheet.create({
     image: {
         width: ITEM_WIDTH,
-        height,
+        height: ITEM_HEIGHT,
         resizeMode: 'cover',
     },
     pagination: {

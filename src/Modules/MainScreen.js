@@ -65,6 +65,12 @@ export default class MainScreen extends Component {
                 >
                     <Text>{Route.Reanimated2}</Text>
                 </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.card}
+                    onPress={() => { Route.navigate(Route.Finance); }}
+                >
+                    <Text>{Route.Finance}</Text>
+                </TouchableOpacity>
             </View>
         );
     }
