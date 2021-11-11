@@ -1,12 +1,10 @@
 /* eslint-disable global-require */
 import React, { Component } from 'react';
 import {
- Image, Text, View, ScrollView,
+ Image, Text, View,
 } from 'react-native';
-import BottomSheet from 'reanimated-bottom-sheet';
 import PaymentCard from './PaymentCard';
 import SlidingUp from './SlidingUp';
-import TransactionTab from './TransactionTab';
 
 export default class MainFinance extends Component {
     render() {

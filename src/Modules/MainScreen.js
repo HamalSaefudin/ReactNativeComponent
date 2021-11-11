@@ -71,6 +71,12 @@ export default class MainScreen extends Component {
                 >
                     <Text>{Route.Finance}</Text>
                 </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.card}
+                    onPress={() => { Route.navigate(Route.SVG); }}
+                >
+                    <Text>{Route.SVG}</Text>
+                </TouchableOpacity>
             </View>
         );
     }

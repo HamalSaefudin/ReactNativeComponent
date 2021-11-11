@@ -8,6 +8,7 @@ import MainScreen from '../Modules/MainScreen';
 import ZaraCarousel from '../Modules/ZaraCarousel/ZaraCarousel';
 import Route, { navigation } from './Routes';
 import MainFinance from '../Modules/Finance/MainFinance';
+import RNSvg from '../Modules/RNSvg/RNSvg';
 
 const Stack = createStackNavigator();
 
@@ -49,6 +50,11 @@ const ApplicationStack = () => (
         <Stack.Screen
           name={Route.Finance}
           component={MainFinance}
+          options={NoHeaderOption}
+        />
+        <Stack.Screen
+          name={Route.SVG}
+          component={RNSvg}
           options={NoHeaderOption}
         />
       </Stack.Navigator>

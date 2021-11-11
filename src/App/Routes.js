@@ -15,6 +15,7 @@ const Route = {
     AccordionList: 'Accordion List',
     Reanimated2: 'Reanimated 2',
     Finance: 'Finance',
+    SVG: 'Svg',
 };
 
 export default Route;
